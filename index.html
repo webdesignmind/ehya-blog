@@ -14,5 +14,80 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <section class="hero">
+      <div class="container">
+        <header class="header">
+          <a href="index.html"
+            ><img src="img/logo.svg" alt="icon: logo" class="header__logo"
+          /></a>
+          <div class="header__left header__left--mobile-hidden">
+            <ul class="header-list">
+              <li class="header-list__links">
+                <a href="#" class="header-list__link">Домой</a>
+              </li>
+              <li class="header-list__links">
+                <a href="#" class="header-list__link"
+                  >Лендинги
+                  <img
+                    src="img/main/arrow-down.svg"
+                    alt="icon: arrow-down"
+                    class="header-list__image"
+                  />
+                </a>
+              </li>
+              <li class="header-list__links">
+                <a href="#" class="header-list__link"
+                  >Страницы
+                  <img
+                    src="img/main/arrow-down.svg"
+                    alt="icon: arrow-down"
+                    class="header-list__image"
+                  />
+                </a>
+              </li>
+              <li class="header-list__links">
+                <a href="#" class="header-list__link">Помощь</a>
+              </li>
+            </ul>
+            <button class="button header-button">Получить</button>
+          </div>
+          <!-- ./header-left -->
+          <button class="menu-button header__menu-button">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+          </button>
+        </header>
+        <!-- ./header -->
+        <h1 class="hero__title">Отдел новостей</h1>
+        <form action="search" class="hero-search">
+          <input
+            type="text"
+            class="hero-search__input"
+            placeholder="Поиск постов"
+          />
+          <img
+            src="img/main/search.svg"
+            alt="icon: search"
+            class="hero-search__icon"
+          />
+          <button class="button hero-search__button" type="submit">
+            Поиск
+          </button>
+        </form>
+        <!-- ./form -->
+        <div class="hero-tags">
+          <span class="hero-tags__text">Популярные Тэги :</span>
+          <button class="button hero-tags__tag">Design</button>
+          <button class="button hero-tags__tag">User Experience</button>
+          <button class="button hero-tags__tag">User Interfaces</button>
+        </div>
+        <!-- ./hero-tags -->
+      </div>
+      <!-- ./container -->
+    </section>
+    <!-- ./section hero -->
+    <section class="bottom" style="height: 100px"></section>
+  </body>
 </html>
