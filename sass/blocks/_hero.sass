@@ -100,3 +100,40 @@
       line-height: 20px
       margin-right: 20px
       cursor: pointer
+
+@media (max-width:960px)
+  .hero
+    &__title
+      font-size: 38px
+      margin: 90px 0 40px 0
+@media (max-width: 640px)
+  .hero
+    &__title
+      font-size: 32px
+      margin: 40px 0 30px 0
+    &-search
+      display: flex
+      flex-direction: column
+      max-width: 100%
+      margin-bottom: 12px
+      &__input
+        height: 48px
+        margin-bottom: 12px
+        padding: 13px 13px 13px 44px
+      &__icon
+        top: 17px
+        left: 16px
+      &__button
+        position: relative
+        top: 0
+        right: 0
+        padding: 13px
+    &-tags
+      &__text
+        display: block
+        font-size: 14px
+        line-height: 20px
+        margin-bottom: 12px
+      &__tag
+        margin-right: 12px
+        margin-bottom: 11px

@@ -30,7 +30,6 @@
         margin-right: 32px
       &:last-child
         margin-right: 82px
-
     &__link
       text-decoration: none
       color: white
@@ -43,15 +42,39 @@
     font-weight: 700
     font-size: 16px
     line-height: 22px
-  &__menu
+.menu
+  &-button
+    display: none
+    padding: 3px 1px
+    width: 24px
+    height: 24px
+    align-items: center
+    justify-content: space-between
+    flex-direction: column
+    border: none
+    background-color: transparent
+    cursor: pointer
+    outline: none
+
+@media (max-width:960px)
+  .header
+    &-list
+      &__links
+        font-size: 14px
+        &:last-child
+          margin-right: 50px
     &-button
+      font-size: 14px
+      padding: 8px 18px
+@media (max-width: 640px)
+  .header
+    &__left
       display: none
-      padding: 3px 1px
-      width: 24px
-      height: 24px
-      align-items: center
-      justify-content: space-between
-      flex-direction: column
-      border: none
-      background-color: transparent
-      cursor: poiner
+  .menu
+    &-button
+      position: relative
+      display: flex
+      &__line
+        width: 22px
+        height: 2px
+        background-color: $light
